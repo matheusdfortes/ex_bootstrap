@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+.firstLine {
+    display: flex;
+    align-items: center;
+}
+
+.firstLine img {
+    width: 20%;
+    height: 100%;
+}
+
+.firstLine h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.secondLine {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.secondLine ul {
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-link {
+    color: black;
+    font-style: italic;
+}
+
+.nav-item:hover {
+    border-top: 1px solid black;
+}
+
+
+.carousel-item img {
+    height: 80vh;
+}
+
+.card-img-overlay a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+section {
+    margin: 40px 0px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        position: sticky;
+        top:0;
+        z-index: 3;
+        background-color: #fff;
+    }
+
+    #button-navbar {
+        justify-content: center;
+    }
+
+    #nome-cabecalho {
+        margin-bottom: 10px;
+    }
+
+    ul.nav.nav-pills {
+        display: block;
+        justify-content: center;
+    }
+    
+    a.nav-link{
+        text-align: center;
+    }
+
+    .nav-item:hover {
+        border-bottom: 1px solid black;
+        border-top: 0;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .firstLine img {
+        width: 20%;
+        height: 100%;
+    }
+
+    header {
+        position: sticky;
+        top:0;
+        z-index: 3;
+        background-color: #fff;
+        display: block;
+    }
+
+    #nome-cabecalho {
+        margin-bottom: 0px;
+    }
+
+    #button-navbar {
+        justify-content: center;
+    }
+
+    ul.nav.nav-pills {
+        display: block;
+        justify-content: center;
+    }
+
+    a.nav-link{
+        text-align: center;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+}

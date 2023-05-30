@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div id="nome-cabecalho" class="col-md-7 col-lg-4 col-sm-4 firstLine">
+                    <img src="./imagens/logo.png" alt="">
+                    <h1>Your Music</h1>
+                </div>
+                <div class="col-md-5 col-lg-4 col-sm-4  firstLine">
+                    <div class="input-group mb-0">
+                        <input type="text" class="form-control" placeholder="O que você procura?">
+                        <button class="btn btn-outline-secondary">Buscar</button>
+                    </div>
+                </div>
+                <div id="button-navbar" class="col-md-12 col-lg-4 col-sm-4 firstLine">
+                    <div  class="navbar">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col secondLine">
+                    <div class="navbar">
+                        <nav class="collapse navbar-collapse" id="menu">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cordas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Percussão</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Teclas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sopro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pedais</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="carousel-principal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel-principal" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagens/violao.jpg" class="w-100" data-bs-interval="3000">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/piano.jpg" class="d-block w-100" data-bs-interval="3000">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./imagens/flauta.jpg" class="w-100" data-bs-interval="3000">
+                </div>
+            </div>
+        </div>
+        <div id="botoes-controle-carousel">
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel-principal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel-principal" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-sm-12">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/instrumento-cordas.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Cordas</h5>
+                                <p class="card-text">instrumentos de cordas são bons para aprender ...</p>
+                                <a href="#" class="btn btn-primary position-absolute bottom-0 right-0 w-50 ">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/percussao.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Percussão</h5>
+                                <p class="card-text">instrumentos de cordas são bons para aprender ...</p>
+                                <a href="#" class="btn btn-primary position-absolute bottom-0 right-0 w-50 ">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/teclas.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Teclas</h5>
+                                <p class="card-text">instrumentos de cordas são bons para aprender ...</p>
+                                <a href="#" class="btn btn-primary position-absolute bottom-0 right-0 w-50 ">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/sopro.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Sopro</h5>
+                                <p class="card-text">instrumentos de cordas são bons para aprender ...</p>
+                                <a href="#" class="btn btn-primary position-absolute bottom-0 right-0 w-50 ">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-12">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/pedais.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Pedais</h5>
+                                <p class="card-text">instrumentos de cordas são bons para aprender ...</p>
+                                <a href="#" class="btn btn-primary position-absolute bottom-0 right-0 w-50 ">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
